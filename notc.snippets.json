@@ -1,0 +1,10 @@
+{
+  "NotC Main": {
+    "prefix": "main",
+    "body": [
+      "void Main(string[] args) {",
+      "}"
+    ],
+    "description": "NotC Main entry point"
+  }
+}

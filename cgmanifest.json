@@ -1,0 +1,17 @@
+{
+	"registrations": [
+		{
+			"component": {
+				"type": "git",
+				"git": {
+					"name": "antlr/antlr4",
+					"repositoryUrl": "https://github.com/antlr/antlr4",
+				}
+			},
+			"license": "BSD-3-Clause license",
+			"version": "4.13.1",
+			"description": "ANTLR (ANother Tool for Language Recognition) is a powerful parser generator for reading, processing, executing, or translating structured text or binary files."
+		}
+	],
+	"version": 1
+}

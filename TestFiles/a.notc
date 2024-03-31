@@ -1,0 +1,27 @@
+// The title to output
+
+const string Title = "NotC Title";
+private string? SubTitle { get; set; }
+
+/// <summary>
+///    Main procedure 
+/// </summary>
+void Main(string[] args)
+{
+    SubTitle = "!C sub-title";
+    WriteTitle();
+    /* single-line comment */
+}
+
+/***/
+void WriteTitle()
+{
+    WriteLine(Title);
+    if (SubTitle != null)
+        WriteLine(SubTitle);
+    /*
+    multi-line
+    comment
+    */
+}
+

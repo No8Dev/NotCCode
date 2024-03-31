@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotCCode", "NotCCode\NotCCode.csproj", "{ECF90C3E-32B8-4F46-BC18-3A9E9F39775F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotCCLI", "NotCCLI\NotCCLI.csproj", "{DFC3DAE4-1657-455E-9FFF-C2F5022B4AC2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Stuff", "Stuff", "{59CBD2D6-6F34-4110-8249-EDB90C6224CD}"
+	ProjectSection(SolutionItems) = preProject
+		antlr4\generatecode.sh = antlr4\generatecode.sh
+		antlr4\NotCLexer.g4 = antlr4\NotCLexer.g4
+		antlr4\NotCParser.g4 = antlr4\NotCParser.g4
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestFiles", "TestFiles", "{DEFB7689-3D56-4CF4-A337-E7284CEA1BA9}"
+	ProjectSection(SolutionItems) = preProject
+		TestFiles\a.notc = TestFiles\a.notc
+		TestFiles\AllInOne.cs = TestFiles\AllInOne.cs
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotCTester", "NotCTester\NotCTester.csproj", "{EA6FCDA6-7AB5-4DC3-ABAE-249AB9F5EA23}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ECF90C3E-32B8-4F46-BC18-3A9E9F39775F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECF90C3E-32B8-4F46-BC18-3A9E9F39775F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECF90C3E-32B8-4F46-BC18-3A9E9F39775F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECF90C3E-32B8-4F46-BC18-3A9E9F39775F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFC3DAE4-1657-455E-9FFF-C2F5022B4AC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFC3DAE4-1657-455E-9FFF-C2F5022B4AC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFC3DAE4-1657-455E-9FFF-C2F5022B4AC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFC3DAE4-1657-455E-9FFF-C2F5022B4AC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA6FCDA6-7AB5-4DC3-ABAE-249AB9F5EA23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA6FCDA6-7AB5-4DC3-ABAE-249AB9F5EA23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA6FCDA6-7AB5-4DC3-ABAE-249AB9F5EA23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA6FCDA6-7AB5-4DC3-ABAE-249AB9F5EA23}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

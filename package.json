@@ -1,0 +1,66 @@
+{
+  "name": "notc",
+  "displayName": "!C Language Basics",
+  "description": "Provides snippets, syntax highlighting, bracket matching and folding in !C files.",
+  "version": "0.1.0",
+  "publisher": "no8.dev",
+  "engines": {
+    "vscode": "^1.87.0"
+  },
+  "categories": ["Programming Languages"],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "configurationDefaults": {
+      "[notc]": {
+        "editor.maxTokenizationLineLength": 2500
+      }
+    },
+    "commands": [
+      {
+        "command": "notc.alloCode",
+        "title": "!C: Allo Code"
+      }
+    ],
+    "languages": [
+      {
+        "id": "notc",
+        "aliases": ["Not C"],
+        "extensions": [".notc"],
+        "configuration": "./notc.language-configuration.json"
+      }
+    ],
+    "grammars": [
+			{
+        "language": "notc",
+				"scopeName": "source.notc",
+				"path": "./notc.tmLanguage.json"
+			}
+		],
+    "snippets": [
+      {
+        "language": "notc",
+        "path": "./notc.snippets.json"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint NotCVSCode --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.87.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@typescript-eslint/eslint-plugin": "^7.4.0",
+    "@typescript-eslint/parser": "^7.4.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.3.3",
+    "@vscode/test-cli": "^0.0.8",
+    "@vscode/test-electron": "^2.3.9"
+  }
+}
